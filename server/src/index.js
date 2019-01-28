@@ -25,6 +25,7 @@ const server = new ApolloServer({
 
     return { user: { ...user.dataValues } };
   },
+  cors: true,
   typeDefs,
   resolvers,
   dataSources: () => ({
